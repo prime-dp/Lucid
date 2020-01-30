@@ -1,0 +1,56 @@
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.main-title-paragraph {
+  color: $paragraph-text-color;
+}
+
+.main-title-section {
+  color: $title-text-color-1;
+}
+
+.title-description {
+  color: $description-text-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-title {
+  line-height: 1;
+}
+
+.filled-button, .not-filled-button, .filled-button:hover, .not-filled-button:hover {
+  color: $title-text-color-1;
+  text-transform: uppercase;
+  font-size: .8rem;
+  line-height: 1;
+}
+
+.logo-wrap {
+  text-transform: uppercase;
+  color: $title-text-color-1;
+  font-size: .5rem;
+  line-height: 1;
+  .logo-title-text {
+    font-size: 1.4rem;
+  }
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title,.title-description {
+  line-height: 1;
+}

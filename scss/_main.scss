@@ -1,0 +1,45 @@
+.main-title-section {
+  background-image: url("../img/bg-header.png");
+  padding: 160px 110px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main-title {
+  margin: 30px 0;
+}
+
+.filled-button, .not-filled-button {
+  display: inline-flex;
+  min-width: 160px;
+  padding: 20px 0;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.filled-button {
+  background-color: $filled-button-bg-color;
+}
+
+.product-overview {
+  padding: 65px 0;
+}
+
+.section-title {
+  margin-top: 24px;
+  padding-bottom: 34px;
+  position: relative;
+  &:after, &:before {
+    @include pseudo;
+    width: 20px;
+    height: 2px;
+    background-color: $description-text-color;
+    transform: translateX(-50%);
+    left: calc(50% - 11px);
+    bottom: 0;
+  }
+  &:before {
+    left: calc(50% + 11px);
+  }
+}
